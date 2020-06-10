@@ -5,7 +5,7 @@ import { fetchData } from './api/';
 import styles from './App.module.css';
 
 import image from './images/image.jpeg';
-import {footer} from './components/footer/Footer';
+import Footer from './components/footer/Footer';
 
 
 class App extends React.Component {
@@ -42,7 +42,7 @@ class App extends React.Component {
 
         <Chart data={data} country={country} /> 
 
-        <footer/>
+        <Footer/>
       </div>
     );
   }
