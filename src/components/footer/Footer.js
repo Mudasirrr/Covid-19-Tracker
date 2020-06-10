@@ -3,8 +3,6 @@ import React ,{Fragment} from 'react';
 import { Cards, CountryPicker, Chart } from './components';
 import styles from './Footer.module.css';
 
-import image from './images/image.jpeg';
-import {Footer} from './components/footer/Footer';
 
 
 class Footer extends React.Component {
