@@ -5,7 +5,6 @@ import { fetchData } from './api/';
 import styles from './App.module.css';
 
 import image from './images/image.jpeg';
-import { Grid } from '@material-ui/core';
 
 
 class App extends React.Component {
