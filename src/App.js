@@ -5,6 +5,7 @@ import { fetchData } from './api/';
 import styles from './App.module.css';
 
 import image from './images/image.jpeg';
+import {footer} from './components/footer/Footer';
 
 
 class App extends React.Component {
@@ -40,6 +41,8 @@ class App extends React.Component {
         <h1 className={styles.header1}>Here ou can check chart</h1>
 
         <Chart data={data} country={country} /> 
+
+        <footer/>
       </div>
     );
   }
