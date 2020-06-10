@@ -70,6 +70,11 @@ section .section-title {
     padding-left: 0;
     border-left: transparent;
     padding-bottom: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 
+    10px;
+}
+.container{
+    background-color: aqua;
 }
 }
+
