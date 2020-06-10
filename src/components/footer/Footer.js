@@ -23,7 +23,7 @@ class Footer extends React.Component {
 				    <br/>
           <div className="row">
             <div className="col-xs-12 col-sm-12 col-md-12 mt-2 mt-sm-2 text-center text-white">
-              <p className="h6">© All right Reversed.<a className="text-green ml-2" >Mudasir Hussain</a></p>
+              <p className="h6">© All right Reversed.Mudasir Hussain</p>
             </div>
           </div>
       </div>
