@@ -1,6 +1,5 @@
 import React ,{Fragment} from 'react';
 
-import { Cards, CountryPicker, Chart } from './components';
 import styles from './Footer.module.css';
 
 
