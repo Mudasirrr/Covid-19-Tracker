@@ -4,8 +4,14 @@ import { Cards, CountryPicker, Chart } from './components';
 import { fetchData } from './api/';
 import styles from './App.module.css';
 
-import image from './images/image.jpeg';
-import Footer from './components/footer/Footer';
+
+// import Footer from './components/footer/Footer';
+
+import Navbar from './components/Layout/Navbar';
+import Landing from './components/Layout/Landing';
+import Footer from './components/Layout/Footer';
+
+import {BrowserRouter,Route} from 'react-router-dom';
 
 
 class App extends React.Component {
@@ -30,20 +36,43 @@ class App extends React.Component {
     const { data, country } = this.state;
 
     return (
+      <BrowserRouter>
+      {/* <div className={styles.container}> */}
+        
+      <Navbar/>
+
+      <Route exact path='/' component={Landing}></Route>
+      <Route path='/chart'>
+      <Chart data={data} country={country} /> 
       
-      <div className={styles.container}>
-        <img className={styles.image} src={image} alt="COVID-19" />
-        <h1 className={styles.header1}>Welcome to the Covid-19 Tracker <br/> Here You Can check the Updated result of Covid-19</h1>
+              <h1 className={styles.header2} ></h1>
+              <Cards data={data} />
+              <h1 className={styles.header1}></h1>
+      </Route>
+      <Route  path='/selcountry' >
+      <CountryPicker handleCountryChange={this.handleCountryChange} />
+      <Chart data={data} country={country} /> 
+      
+      <h1 className={styles.header2} ></h1>
+      <Cards data={data} />
+      <h1 className={styles.header1}></h1>
+      </Route>
+      <Route  path='/card' component={Cards}></Route>
+      {/* <Landing/> */}
+       
+        {/* <h1 className={styles.header1}>Welcome to the Covid-19 Tracker <br/> Here You Can check the Updated result of Covid-19</h1> */}
 
-        <CountryPicker handleCountryChange={this.handleCountryChange} />
-        <h1 className={styles.header2} >Here You can check the Result!</h1>
-        <Cards data={data} />
-        <h1 className={styles.header1}>Here ou can check chart</h1>
+              {/* <CountryPicker handleCountryChange={this.handleCountryChange} />
+              <h1 className={styles.header2} ></h1>
+              <Cards data={data} />
+              <h1 className={styles.header1}></h1> */}
 
-        <Chart data={data} country={country} /> 
 
-        <Footer/>
-      </div>
+        {/* <Footer/> */}
+        
+      <Footer/>
+      </BrowserRouter>
+
     );
   }
 }
