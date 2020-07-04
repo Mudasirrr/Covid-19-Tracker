@@ -47,7 +47,7 @@ class App extends React.Component {
       <Chart data={data} country={country} /> 
       
               <h1 className={styles.header2} >---------------------------------------------</h1>
-              <Cards data={data} />
+              <Cards data={data} /> 
       </Route>
       <Route  path='/selcountry' >
       <CountryPicker handleCountryChange={this.handleCountryChange} />
