@@ -11,14 +11,25 @@
 
 .infected {
   border-bottom: 10px solid rgba(0, 0, 255, 0.5);
+  background-color: hsl(39, 84%, 66%);
 }
 
 .recovered{
   border-bottom: 10px solid rgba(0, 255, 0, 0.5);
+  
 }
 
 .deaths{
-  border-bottom: 10px solid rgba(255, 0, 0, 0.5);
+  border-bottom: 10px solid rgba(250, 24, 3, 0.5);
+}
+.deathbg{
+  background-color: rgb(233, 130, 130);
+}
+.recobg{
+  background-color: rgb(120, 211, 128);
+}
+.infbg{
+  background-color: rgb(233, 212, 144);
 }
 
 @media only screen and (max-width: 770px) {
