@@ -45,17 +45,14 @@ class App extends React.Component {
       <Route path='/chart'>
       <Chart data={data} country={country} /> 
       
-              <h1 className={styles.header2} ></h1>
+              <h1 className={styles.header2} >---------------------------------------------</h1>
               <Cards data={data} />
-              <h1 className={styles.header1}></h1>
       </Route>
       <Route  path='/selcountry' >
       <CountryPicker handleCountryChange={this.handleCountryChange} />
       <Chart data={data} country={country} /> 
       
-      <h1 className={styles.header2} ></h1>
       <Cards data={data} />
-      <h1 className={styles.header1}></h1>
       </Route>
       <Route  path='/card' component={Cards}></Route>
       {/* <Landing/> */}
