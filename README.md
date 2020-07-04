@@ -1,6 +1,6 @@
 # COVID-19 Tracker
 
-### [Live Demo](covid_19_tracking_by_mudasir.surge.sh)
+### [Live Demo][http://covid_19_tracking_by_mudasir.surge.sh/]
 
 ## Introduction
 In this Project, we will create a full COVID-19 Tracker. We're going to use React, Charts.JS and Material UI.
