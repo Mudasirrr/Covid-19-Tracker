@@ -37,6 +37,7 @@ class App extends React.Component {
 
     return (
       <BrowserRouter>
+      
       {/* <div className={styles.container}> */}
         
       <Navbar/>
@@ -69,6 +70,7 @@ class App extends React.Component {
         
       <Footer/>
       </BrowserRouter>
+
 
     );
   }
